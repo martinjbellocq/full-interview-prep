@@ -1,0 +1,113 @@
+name: 📝 Case study — sparring que no acertó
+description: Compartí un caso donde el modo sparring generó ataques que no calzaron con lo que pasó en la entrevista real. Sirve para iterar la lógica de cruce entre tipo de gap y patterns.
+title: "[Case study] "
+labels: ["case-study"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por compartir. Estos reportes son lo que permite iterar el framework de sparring en serio.
+
+        **Importante sobre privacidad:** no incluyas nombres de empresas, entrevistadores ni detalles que te identifiquen a vos o a terceros. Lo que sirve son los patterns del caso, no la identidad. Si dudás, anonimizá.
+
+  - type: dropdown
+    id: industry
+    attributes:
+      label: Industria
+      description: ¿En qué industria era la entrevista?
+      options:
+        - Tecnología / SaaS
+        - Servicios financieros / Banking
+        - Fintech
+        - Consultoría
+        - Healthcare
+        - Retail / E-commerce
+        - Industrial / Manufactura
+        - Media / Entertainment
+        - Educación
+        - Public sector / NGO
+        - Otra (especificar en el detalle)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: role-level
+    attributes:
+      label: Nivel del rol
+      options:
+        - Team Lead / Manager
+        - Senior Manager / Head of
+        - Director / VP
+        - C-Level
+    validations:
+      required: true
+
+  - type: dropdown
+    id: stage
+    attributes:
+      label: Etapa del proceso
+      options:
+        - Primera ronda / filtro
+        - Técnica con hiring manager
+        - Fit con hiring manager
+        - Fit con líder superior
+        - Panel
+        - Final / con CEO o board
+        - Otra
+    validations:
+      required: true
+
+  - type: textarea
+    id: pattern
+    attributes:
+      label: Pattern bajo presión relevante
+      description: '¿Qué pattern de tu perfil era el más relevante para esta entrevista? (Ej.: "tiendo a sobre-explicar cuando me sienten dudando", "minimizo logros cuando me preguntan por impacto", etc.)'
+      placeholder: Describí el pattern sin incluir info identificatoria.
+    validations:
+      required: true
+
+  - type: textarea
+    id: sparring-generated
+    attributes:
+      label: Qué ataque generó el sparring
+      description: Pegá el ataque (o ataques) que el sparring identificó como crítico.
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: real-question
+    attributes:
+      label: Qué pasó en la entrevista real
+      description: ¿Qué preguntaron realmente? ¿Cómo lo manejaste? ¿Funcionó el frame mental del sparring o no?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: outcome
+    attributes:
+      label: Diagnóstico
+      description: ¿El sparring acertó o no?
+      options:
+        - Acertó el weak spot pero el frame no fue suficiente
+        - Acertó parcialmente (mismo tema, ángulo distinto)
+        - No acertó al weak spot real
+        - Sí acertó y el frame funcionó (compartiendo igual como referencia)
+    validations:
+      required: true
+
+  - type: textarea
+    id: better-attack
+    attributes:
+      label: Qué ataque hubiera sido más útil
+      description: Si pudieras rebobinar el prep con conocimiento de lo que pasó, ¿qué ataque hubiera sido más afilado?
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Notas adicionales
+      description: Cualquier contexto extra que sirva para entender el caso (cultura de la empresa, dinámica del entrevistador, etc.).
+    validations:
+      required: false

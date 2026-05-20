@@ -6,6 +6,18 @@ No es otro template de "10 preguntas para tu próxima entrevista". Es un framewo
 
 ---
 
+## Descargar
+
+**[Descargar la última versión (`.zip`)](https://github.com/martinjbellocq/full-interview-prep/releases/latest/download/full-interview-prep.zip)**
+
+O entrar a la [página de Releases](https://github.com/martinjbellocq/full-interview-prep/releases) para ver el historial de versiones con sus changelogs.
+
+> **No uses el botón verde "Code" → "Download ZIP"** que aparece arriba en este repo. Ese descarga todo el código fuente con un nombre incorrecto y la skill no va a poder instalarse en Claude.ai. Siempre descargá desde Releases (link de arriba).
+
+Una vez descargado el `.zip`, seguí los pasos de [Instalación](#instalación) más abajo.
+
+---
+
 ## Cómo funciona
 
 La calidad del prep depende de cuatro inputs convergentes. Cuando los cuatro están bien levantados, la skill puede entregar análisis y sparring que valen la pena.

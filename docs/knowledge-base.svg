@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 720" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">
+  <style>
+    .title { font-size: 22px; font-weight: 600; fill: #1f2937; }
+    .subtitle { font-size: 13px; fill: #6b7280; }
+    .box-title { font-size: 16px; font-weight: 600; fill: #1f2937; }
+    .box-detail { font-size: 12px; fill: #4b5563; }
+    .center-title { font-size: 18px; font-weight: 700; fill: #1e3a8a; }
+    .center-detail { font-size: 12px; fill: #1e3a8a; }
+    .output-title { font-size: 16px; font-weight: 600; fill: #065f46; }
+    .output-detail { font-size: 12px; fill: #065f46; }
+    .box-fill { fill: #f9fafb; }
+    .box-stroke { stroke: #d1d5db; stroke-width: 1.5; }
+    .center-fill { fill: #dbeafe; }
+    .center-stroke { stroke: #2563eb; stroke-width: 2; }
+    .output-fill { fill: #d1fae5; }
+    .output-stroke { stroke: #059669; stroke-width: 2; }
+    .arrow { stroke: #6b7280; stroke-width: 1.8; fill: none; }
+    .arrow-strong { stroke: #2563eb; stroke-width: 2.2; fill: none; }
+
+    @media (prefers-color-scheme: dark) {
+      .title { fill: #f3f4f6; }
+      .subtitle { fill: #9ca3af; }
+      .box-title { fill: #f3f4f6; }
+      .box-detail { fill: #d1d5db; }
+      .center-title { fill: #93c5fd; }
+      .center-detail { fill: #bfdbfe; }
+      .output-title { fill: #6ee7b7; }
+      .output-detail { fill: #a7f3d0; }
+      .box-fill { fill: #1f2937; }
+      .box-stroke { stroke: #4b5563; }
+      .center-fill { fill: #1e3a8a; }
+      .center-stroke { stroke: #60a5fa; }
+      .output-fill { fill: #064e3b; }
+      .output-stroke { stroke: #34d399; }
+      .arrow { stroke: #9ca3af; }
+      .arrow-strong { stroke: #60a5fa; }
+    }
+  </style>
+
+  <!-- Definitions: arrowheads -->
+  <defs>
+    <marker id="arrow-gray" viewBox="0 0 10 10" refX="9" refY="5"
+            markerUnits="strokeWidth" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#6b7280" />
+    </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="9" refY="5"
+            markerUnits="strokeWidth" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2563eb" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="450" y="40" text-anchor="middle" class="title">Base de conocimiento para una entrevista</text>
+  <text x="450" y="62" text-anchor="middle" class="subtitle">Cuatro inputs convergen para generar un prep doc calibrado</text>
+
+  <!-- Top-left box: Tu perfil -->
+  <rect x="60" y="110" width="220" height="120" rx="8" class="box-fill box-stroke" />
+  <text x="170" y="138" text-anchor="middle" class="box-title">Tu perfil</text>
+  <text x="170" y="162" text-anchor="middle" class="box-detail">• Track record con métricas</text>
+  <text x="170" y="180" text-anchor="middle" class="box-detail">• Patterns bajo presión</text>
+  <text x="170" y="198" text-anchor="middle" class="box-detail">• Target roles y criterios</text>
+  <text x="170" y="216" text-anchor="middle" class="box-detail">• Fortalezas a amplificar</text>
+
+  <!-- Top-right box: JD del rol -->
+  <rect x="620" y="110" width="220" height="120" rx="8" class="box-fill box-stroke" />
+  <text x="730" y="138" text-anchor="middle" class="box-title">JD del rol</text>
+  <text x="730" y="162" text-anchor="middle" class="box-detail">• Hard requirements</text>
+  <text x="730" y="180" text-anchor="middle" class="box-detail">• KPIs implícitos</text>
+  <text x="730" y="198" text-anchor="middle" class="box-detail">• Nice-to-haves</text>
+  <text x="730" y="216" text-anchor="middle" class="box-detail">• Señales de cultura</text>
+
+  <!-- Bottom-left box: Empresa -->
+  <rect x="60" y="430" width="220" height="120" rx="8" class="box-fill box-stroke" />
+  <text x="170" y="458" text-anchor="middle" class="box-title">Empresa + mercado</text>
+  <text x="170" y="482" text-anchor="middle" class="box-detail">• DD ejecutivo del mercado</text>
+  <text x="170" y="500" text-anchor="middle" class="box-detail">• Contexto competitivo</text>
+  <text x="170" y="518" text-anchor="middle" class="box-detail">• Impacto de IA en el sector</text>
+  <text x="170" y="536" text-anchor="middle" class="box-detail">• Filtrado al mercado real</text>
+
+  <!-- Bottom-right box: Entrevistador -->
+  <rect x="620" y="430" width="220" height="120" rx="8" class="box-fill box-stroke" />
+  <text x="730" y="458" text-anchor="middle" class="box-title">Entrevistador</text>
+  <text x="730" y="482" text-anchor="middle" class="box-detail">• Trayectoria + posts</text>
+  <text x="730" y="500" text-anchor="middle" class="box-detail">• Estilo probable</text>
+  <text x="730" y="518" text-anchor="middle" class="box-detail">• Qué le importa</text>
+  <text x="730" y="536" text-anchor="middle" class="box-detail">• Cómo va a probar</text>
+
+  <!-- Center: Knowledge base -->
+  <rect x="320" y="270" width="260" height="120" rx="10" class="center-fill center-stroke" />
+  <text x="450" y="302" text-anchor="middle" class="center-title">Base de conocimiento</text>
+  <text x="450" y="324" text-anchor="middle" class="center-title">integrada</text>
+  <text x="450" y="350" text-anchor="middle" class="center-detail">Fit-gap calibrado</text>
+  <text x="450" y="368" text-anchor="middle" class="center-detail">Hipótesis de ataques específicos</text>
+
+  <!-- Arrows from corners to center -->
+  <!-- Top-left → center -->
+  <path d="M 280 195 Q 320 230 318 280" class="arrow" marker-end="url(#arrow-gray)" />
+  <!-- Top-right → center -->
+  <path d="M 620 195 Q 580 230 582 280" class="arrow" marker-end="url(#arrow-gray)" />
+  <!-- Bottom-left → center -->
+  <path d="M 280 465 Q 320 425 318 385" class="arrow" marker-end="url(#arrow-gray)" />
+  <!-- Bottom-right → center -->
+  <path d="M 620 465 Q 580 425 582 385" class="arrow" marker-end="url(#arrow-gray)" />
+
+  <!-- Arrow center → output -->
+  <path d="M 450 395 L 450 590" class="arrow-strong" marker-end="url(#arrow-blue)" />
+
+  <!-- Bottom: Output box -->
+  <rect x="180" y="600" width="540" height="90" rx="8" class="output-fill output-stroke" />
+  <text x="450" y="628" text-anchor="middle" class="output-title">Output: prep doc principal + DD ejecutivo + modo sparring</text>
+  <text x="450" y="652" text-anchor="middle" class="output-detail">Dos documentos .docx en modo full · one-pager last-mile</text>
+  <text x="450" y="672" text-anchor="middle" class="output-detail">Drilling interactivo opcional con crítica en vivo</text>
+</svg>

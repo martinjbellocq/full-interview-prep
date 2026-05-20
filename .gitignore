@@ -1,0 +1,25 @@
+# Archivos de perfil personales del usuario
+# Estos archivos contienen información privada de cada usuario y NUNCA deben subirse al repo público.
+# Solo el template.md genérico se versiona.
+user-context/*.md
+!user-context/template.md
+
+# Outputs generados (prep docs, DDs)
+# La skill genera .docx en /mnt/user-data/outputs/ cuando se ejecuta en Claude.
+# Si por alguna razón terminan dentro del repo, ignorarlos.
+*.docx
+prep-doc-*
+dd-anexo-*
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*~
+
+# Logs y archivos temporales
+*.log
+*.tmp
+.cache/
